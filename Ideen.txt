@@ -1,0 +1,16 @@
+Angeben was den geldverlusst/ gewinn erbracht hat
+	Spiel: 10
+	Gesamt: 10
+Datum angeben
+	20.15.2019
+	Spiel: 10, Essen: 30
+	Gesamt: 40
+das für was geld ausgegeben wir in eine gesamt variable speichern
+	20.11.2019
+	Spiel: 10, Essen: 30
+	Gesamt: 40
+	23.12.2019
+	spiele: 15, Essen: 5
+	Gesamt: 20
+	
+	Spiele: 25, Essen: 35
