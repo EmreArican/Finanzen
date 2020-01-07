@@ -20,8 +20,31 @@ def income():
         print(f"sie besitzen {file.read()}€")
 
 
-def expenditure():
+def expenditure():  # not finished and full of holes..
     """Adding all expenditures to a month"""
+    with open("test_.csv", "r+", newline="") as f_writer:
+        with open("test_finance.py") as f:
+            row_count = len(f.readlines())
+        if row_count == 0:  # If file is empty than we treat it as brand new file.
+            categories = ["datum", "pflege", "vergnügung", "nahrung",
+                          "familie/geschenke", "gesammt"]
+            # Case insensetiv for convinience
+            writer = csv.DictWriter(f_writer, fieldnames=categories)
+
+            writer.writeheader()
+            # row is constructed as in  writer
+            # meaning first is always "datum" than "pfelge" and so on
+        else:  # else we will just append stuff to the already existing file
+            with open("test_.csv", "a", newline="") as f_appender:
+                date = input("Datum:\n")
+                p_costs = 0
+                v_costs = 3
+                n_costs = 2
+                fg_costs = 0
+                sum_cost = p_costs + v_costs + n_costs + fg_costs
+                # I don't know if i can give this way the values, but it's sufficint to let
+                # everyone know what i want to do and for them to improve my approach.
+                csv.DictWriter(f_appender)
 
 
 def monthly():
